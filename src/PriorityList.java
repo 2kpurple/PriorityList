@@ -146,7 +146,8 @@ public class PriorityList<E> extends AbstractList<E> implements Cloneable, Seria
             int mid = (lo + hi) >>> 1;
             
             int midValCmp;
-            if(array[mid] != null){
+            System.out.println(size);
+            if(mid < size && array[mid] != null){
             	midValCmp = ((Comparable) array[mid]).compareTo(object);
             } else {
             	break;
